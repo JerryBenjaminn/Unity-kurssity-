@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Meteor : MonoBehaviour
 {
+
+    private GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -16,6 +19,10 @@ public class Meteor : MonoBehaviour
         {
             Destroy(this.gameObject); // Luodaan tagiin pohjautuva OnTriggerEnter2D- metodi, joka tarkistaa kun meteori osuu collideriin, niin se tuhoutuu
             
+        }
+        else if(collision.tag == "Player")
+        {
+            Destroy(player.gameObject);
         }
     }
 }
