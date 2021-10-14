@@ -10,11 +10,12 @@ public class Meteor : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Border")
         {
             Destroy(this.gameObject); // Luodaan tagiin pohjautuva OnTriggerEnter2D- metodi, joka tarkistaa kun meteori osuu collideriin, niin se tuhoutuu
+            
         }
     }
 }

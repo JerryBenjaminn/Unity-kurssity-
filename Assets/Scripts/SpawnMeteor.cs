@@ -24,7 +24,7 @@ public class SpawnMeteor : MonoBehaviour
         }
     }
 
-    void Spawn()
+    public void Spawn()
     {
         float randomX = Random.Range(minX, maxX);
         float randomY = Random.Range(minY, maxY);
