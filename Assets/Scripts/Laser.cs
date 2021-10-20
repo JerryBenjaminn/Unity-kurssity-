@@ -6,7 +6,6 @@ public class Laser : MonoBehaviour
 {
     public Vector2 StartingVelocity;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +13,4 @@ public class Laser : MonoBehaviour
         
     }
 
-    // Update is called once per frame
- 
 }
