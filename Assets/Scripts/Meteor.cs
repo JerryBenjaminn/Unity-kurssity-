@@ -17,10 +17,10 @@ public class Meteor : MonoBehaviour
     {
         if(collision.tag == "Border")
         {
-            Destroy(this.gameObject); // Luodaan tagiin pohjautuva OnTriggerEnter2D- metodi, joka tarkistaa kun meteori osuu collideriin, niin se tuhoutuu
+            Destroy(this.gameObject); // Luodaan tagiin pohjautuva OnTriggerEnter2D- metodi, joka tarkistaa kun meteori osuu collideriin, niin se tuhoutuu. Tässä tapauksessa collideriin peliruudun ulkopuolella
             
         }
-        else if(collision.tag == "Player")
+        else if(collision.tag == "Player") //Tarkastetaan, jos pelaaja törmää toisen objektin kanssa, niin se tuhoutuu.
         {
             Destroy(player.gameObject);
         }

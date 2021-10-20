@@ -8,7 +8,7 @@ public class ScoreManager : MonoBehaviour
     private float score;
 
     // Update is called once per frame
-    void Update()
+    void Update() //Tämä metodi tarkastaa, että niin kauan kun pelaajan hahmo on elossa, saa pisteitä.
     {
         if(GameObject.FindGameObjectWithTag("Player") != null)
         {

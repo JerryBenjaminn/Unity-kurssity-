@@ -10,7 +10,7 @@ public class GameOver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.FindGameObjectWithTag("Player") == null)
+        if(GameObject.FindGameObjectWithTag("Player") == null) // Metodi tarkastaa, jos pelaajan hahmo on tuhoutunut, niin game over- ruutu tulee n‰kyviin.
         {
             gameOverPanel.SetActive(true);
         }
@@ -18,6 +18,6 @@ public class GameOver : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); //Restart metodi- joka tuo pelin aloituksen esiin (k‰ynnist‰‰ uuden session)
     }
 }
